@@ -3,6 +3,7 @@ package scaleapi
 import (
 	"encoding/json"
 	"net/http"
+	"net/url"
 	"strings"
 )
 
@@ -13,7 +14,17 @@ type Client struct {
 
 // CreateCategorizationTask creates a new categorization task
 func (client *Client) CreateCategorizationTask(callbackURL, instruction, attachmentType, attachment string, categories []string) (task Task, err error) {
-	body := strings.NewReader(`callback_url=http://f26c3c9b.eu.ngrok.io&instruction=Is this company public or private?&attachment_type=website&attachment=http://www.google.com/&categories=public&categories=private`)
+	v := url.Values{}
+	v.Set("callback_url", callbackURL)
+	v.Set("instruction", instruction)
+	v.Set("attachment_type", attachmentType)
+	v.Set("attachment", attachment)
+
+	for _, category := range categories {
+		v.Add("categories", category)
+	}
+
+	body := strings.NewReader(v.Encode())
 	req, err := http.NewRequest("POST", "https://api.scaleapi.com/v1/task/categorize", body)
 	if err != nil {
 		return task, err
