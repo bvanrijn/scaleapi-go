@@ -12,4 +12,4 @@ Right now, these endpoints are supported:
 - `/v1/task/{task_id}` 
 - `/v1/task/{task_id}/cancel`
 
-At the moment, optional values are not supported.
+At the moment, optional values (like `urgency`) are not supported. The default values are used where available.
