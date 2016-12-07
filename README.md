@@ -1,5 +1,5 @@
 # scaleapi-go
-[![godoc](https://godoc.org/github.com/bvanrijn/scaleapi-go?status.svg)](http://godoc.org/github.com/bvanrijn/scaleapi-go)
+[![godoc](https://godoc.org/github.com/bvanrijn/scaleapi-go?status.svg)](http://godoc.org/github.com/bvanrijn/scaleapi-go) [![Go Report Card](https://goreportcard.com/badge/github.com/bvanrijn/scaleapi-go)](https://goreportcard.com/report/github.com/bvanrijn/scaleapi-go)
 
 Human intelligence.. in Go!
 
