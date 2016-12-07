@@ -3,8 +3,7 @@
 
 Human intelligence.. in Go!
 
-<hr />
-
+## Status
 This project is in its early stages, to say the least.
 
 Right now, these methods are supported:
