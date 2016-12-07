@@ -13,4 +13,4 @@ Right now, these endpoints are supported:
 - `/v1/task/{task_id}/cancel`
 
 At the moment, optional values (like `urgency`) are not supported.
-When there is a default value, it is used instead. For instance, `urgency` is set to `day`.
+Default values are used instead. For instance, `urgency` is set to `day`.
