@@ -6,10 +6,10 @@ Human intelligence.. in Go!
 ## Status
 This project is in its early stages, to say the least.
 
-Right now, these methods are supported:
+Right now, these endpoints are supported:
 
 - `/v1/task/categorize`
 - `/v1/task/{task_id}` 
 - `/v1/task/{task_id}/cancel`
 
-Note that at the moment, optional values are not supported.
+At the moment, optional values are not supported.
